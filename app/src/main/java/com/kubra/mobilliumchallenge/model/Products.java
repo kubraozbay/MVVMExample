@@ -9,23 +9,23 @@ import com.google.gson.annotations.SerializedName;
 public class Products {
 
     @SerializedName("cargo_time")
-    private Long mCargoTime;
+    private int mCargoTime;
     @SerializedName("category")
     private Category mCategory;
     @SerializedName("category_id")
-    private Long mCategoryId;
+    private int mCategoryId;
     @SerializedName("code")
     private Object mCode;
     @SerializedName("comment_count")
-    private Long mCommentCount;
+    private int mCommentCount;
     @SerializedName("commission_rate")
-    private Long mCommissionRate;
+    private int mCommissionRate;
     @SerializedName("definition")
     private String mDefinition;
     @SerializedName("difference")
     private String mDifference;
     @SerializedName("id")
-    private Long mId;
+    private int mId;
     @SerializedName("images")
     private List<Image> mImages;
     @SerializedName("is_active")
@@ -43,13 +43,13 @@ public class Products {
     @SerializedName("is_owner")
     private Boolean mIsOwner;
     @SerializedName("like_count")
-    private Long mLikeCount;
+    private int mLikeCount;
     @SerializedName("max_installment")
     private Object mMaxInstallment;
     @SerializedName("old_price")
-    private Long mOldPrice;
+    private int mOldPrice;
     @SerializedName("price")
-    private Long mPrice;
+    private int mPrice;
     @SerializedName("reject_reason")
     private Object mRejectReason;
     @SerializedName("share_url")
@@ -59,15 +59,15 @@ public class Products {
     @SerializedName("slug")
     private String mSlug;
     @SerializedName("stock")
-    private Long mStock;
+    private int mStock;
     @SerializedName("title")
     private String mTitle;
 
-    public Long getCargoTime() {
+    public int getCargoTime() {
         return mCargoTime;
     }
 
-    public void setCargoTime(Long cargoTime) {
+    public void setCargoTime(int cargoTime) {
         mCargoTime = cargoTime;
     }
 
@@ -79,11 +79,11 @@ public class Products {
         mCategory = category;
     }
 
-    public Long getCategoryId() {
+    public int getCategoryId() {
         return mCategoryId;
     }
 
-    public void setCategoryId(Long categoryId) {
+    public void setCategoryId(int categoryId) {
         mCategoryId = categoryId;
     }
 
@@ -95,19 +95,19 @@ public class Products {
         mCode = code;
     }
 
-    public Long getCommentCount() {
+    public int getCommentCount() {
         return mCommentCount;
     }
 
-    public void setCommentCount(Long commentCount) {
+    public void setCommentCount(int commentCount) {
         mCommentCount = commentCount;
     }
 
-    public Long getCommissionRate() {
+    public int getCommissionRate() {
         return mCommissionRate;
     }
 
-    public void setCommissionRate(Long commissionRate) {
+    public void setCommissionRate(int commissionRate) {
         mCommissionRate = commissionRate;
     }
 
@@ -127,11 +127,11 @@ public class Products {
         mDifference = difference;
     }
 
-    public Long getId() {
+    public int getId() {
         return mId;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         mId = id;
     }
 
@@ -199,11 +199,11 @@ public class Products {
         mIsOwner = isOwner;
     }
 
-    public Long getLikeCount() {
+    public int getLikeCount() {
         return mLikeCount;
     }
 
-    public void setLikeCount(Long likeCount) {
+    public void setLikeCount(int likeCount) {
         mLikeCount = likeCount;
     }
 
@@ -215,19 +215,19 @@ public class Products {
         mMaxInstallment = maxInstallment;
     }
 
-    public Long getOldPrice() {
+    public int getOldPrice() {
         return mOldPrice;
     }
 
-    public void setOldPrice(Long oldPrice) {
+    public void setOldPrice(int oldPrice) {
         mOldPrice = oldPrice;
     }
 
-    public Long getPrice() {
+    public int getPrice() {
         return mPrice;
     }
 
-    public void setPrice(Long price) {
+    public void setPrice(int price) {
         mPrice = price;
     }
 
@@ -263,11 +263,11 @@ public class Products {
         mSlug = slug;
     }
 
-    public Long getStock() {
+    public int getStock() {
         return mStock;
     }
 
-    public void setStock(Long stock) {
+    public void setStock(int stock) {
         mStock = stock;
     }
 

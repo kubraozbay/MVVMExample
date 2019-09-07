@@ -54,8 +54,7 @@ public class ViewPagerAdapter extends PagerAdapter {
         tv_title.setText(featured.getTitle().toUpperCase());
         tv_subTitle.setText(featured.getSubTitle().toUpperCase());
         Glide.with(context).load(featured.getCover().getUrl()).into(img_cover);
-        img_cover.getBackground().setAlpha(127);
-        img_cover.setBackgroundResource(R.color.transparent);
+
         container.addView(v);
         return v;
     }

@@ -16,6 +16,13 @@ import java.lang.reflect.Type;
 
 public class CheckInterfaceDeserializer implements JsonDeserializer<CheckInterface> {
 
+    public static FeaturedList featured = null;
+    public static ProductsList new_products = null;
+    public static CollectionsList collections = null;
+    public static ShopsList editor_shops = null;
+    public static ShopsList new_shops = null;
+    public static CategoriesList categories = null;
+    
     @Override
     public CheckInterface deserialize(JsonElement json, Type typeOfT,
                                       JsonDeserializationContext context) throws JsonParseException {
@@ -27,33 +34,33 @@ public class CheckInterfaceDeserializer implements JsonDeserializer<CheckInterfa
 
             switch (typeVal) {
                 case "featured": {
-                    MainActivity.featured = context.deserialize(json, FeaturedList.class);
+                    featured = context.deserialize(json, FeaturedList.class);
 
                     return context.deserialize(json, FeaturedList.class);
                 }
 
                 case "new_products": {
-                    MainActivity.new_products = context.deserialize(json, ProductsList.class);
+                    new_products = context.deserialize(json, ProductsList.class);
                     return context.deserialize(json, ProductsList.class);
 
                 }
                 case "editor_shops": {
-                    MainActivity.editor_shops = context.deserialize(json, ShopsList.class);
+                    editor_shops = context.deserialize(json, ShopsList.class);
                     return context.deserialize(json, ShopsList.class);
 
                 }
                 case "new_shops": {
-                    MainActivity.new_shops = context.deserialize(json, ShopsList.class);
+                    new_shops = context.deserialize(json, ShopsList.class);
                     return context.deserialize(json, ShopsList.class);
 
                 }
                 case "collections": {
-                    MainActivity.collections = context.deserialize(json, CollectionsList.class);
+                    collections = context.deserialize(json, CollectionsList.class);
                     return context.deserialize(json, CollectionsList.class);
 
                 }
                 case "categories": {
-                    MainActivity.categories = context.deserialize(json, CategoriesList.class);
+                    categories = context.deserialize(json, CategoriesList.class);
                     return context.deserialize(json, CategoriesList.class);
 
                 }

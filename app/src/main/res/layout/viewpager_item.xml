@@ -9,13 +9,13 @@
         android:id="@+id/img_cover"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:background="#99000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:scaleType="fitXY"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:text="sdfsdf"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textSize="24sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@android:color/white"/>
 
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:text="sfdasdf"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:textColor="@android:color/white"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
